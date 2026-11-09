@@ -47,3 +47,5 @@ input,textarea{font:inherit;padding:.75rem 1rem;border-radius:10px;border:1px so
 .pic{width:clamp(200px,30vw,340px)}.band{padding:0;border:0}.band img{width:100%;height:auto}
 .wa{background:#1faa59;border-color:#1faa59;color:#fff}
 .timeline h3{font-size:1.15rem}
+.pic{aspect-ratio:1;object-fit:cover;border-radius:50% 50% 50% 12%}
+.band img{height:clamp(220px,38vw,460px);object-fit:cover}

@@ -21,6 +21,12 @@ $('#form').addEventListener('submit',async e=>{
   try{const r=await fetch(S.formEndpoint,{method:'POST',body:new FormData(f),headers:{Accept:'application/json'}});if(!r.ok)throw 0;f.reset();st.textContent='تم إرسال رسالتك. شكراً لك!'}
   catch(_){st.innerHTML='تعذّر الإرسال. راسلنا على واتساب أو البريد مباشرة.'}
 });
+const nav=$('.nav'),bg=$('#burger');
+const closeNav=()=>{nav.classList.remove('open');bg.setAttribute('aria-expanded','false')};
+bg.onclick=()=>{const o=nav.classList.toggle('open');bg.setAttribute('aria-expanded',o)};
+$('#menu').addEventListener('click',e=>{if(e.target.closest('a'))closeNav()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeNav()});
+matchMedia('(min-width:801px)').addEventListener('change',closeNav);
 const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('show');io.unobserve(x.target)}}),{threshold:.12});
 document.querySelectorAll('section:not(.hero):not(.band) .wrap').forEach(n=>{n.classList.add('rv');io.observe(n)});
 })();

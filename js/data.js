@@ -1,30 +1,37 @@
-// ✏️ EDIT ME: all personal content lives here. Values marked "Placeholder" are NOT real info.
+// ✏️ كل المحتوى هنا. عدّل النصوص والبيانات حسب الحاجة.
 window.SITE = {
-  email: "you@example.com",                            // Placeholder
-  formEndpoint: "https://formspree.io/f/YOUR_FORM_ID", // Create a free form at formspree.io
-  photo: "",                                           // e.g. "assets/profile.jpg" (empty = initials)
-  social: [{label:"GitHub",url:"https://github.com/your-username"},{label:"LinkedIn",url:"https://linkedin.com/in/your-username"}],
-  skills: {
-    "Languages": ["JavaScript","TypeScript","Python","HTML5","CSS3"],
-    "Frameworks": ["React","Vite","Node.js","Tailwind CSS"],
-    "Tools": ["Git","GitHub Actions","Figma","VS Code"]
-  },
-  projects: [ // Placeholder projects. Add "image":"assets/p1.jpg" for a screenshot
-    {cat:"web",tech:["React","Vite"],live:"#",repo:"#",image:"",title:{en:"Sample Project One",ar:"مشروع تجريبي ١"},desc:{en:"Placeholder description. Replace with your project.",ar:"وصف تجريبي. استبدله بمشروعك."}},
-    {cat:"design",tech:["Figma"],live:"#",repo:"#",image:"",title:{en:"Sample Project Two",ar:"مشروع تجريبي ٢"},desc:{en:"Placeholder description. Replace with your project.",ar:"وصف تجريبي. استبدله بمشروعك."}},
-    {cat:"web",tech:["JavaScript","CSS3"],live:"#",repo:"#",image:"",title:{en:"Sample Project Three",ar:"مشروع تجريبي ٣"},desc:{en:"Placeholder description. Replace with your project.",ar:"وصف تجريبي. استبدله بمشروعك."}}
-  ],
-  experience: [
-    {date:"2023 — Now",title:{en:"Job title",ar:"المسمى الوظيفي"},org:{en:"Company name",ar:"اسم الشركة"},desc:{en:"Placeholder: what you did and achieved.",ar:"تجريبي: ما قمت به وأنجزته."}},
-    {date:"2019 — 2023",title:{en:"Degree",ar:"الدرجة العلمية"},org:{en:"University name",ar:"اسم الجامعة"},desc:{en:"Placeholder: field of study.",ar:"تجريبي: مجال الدراسة."}}
+  name: "طريقك إلى ألمانيا",
+  role: "خدمات السفر للدراسة والعمل في ألمانيا",
+  bio: "نرافقكم في جميع خطوات رحلتكم نحو ألمانيا، من البيشايد وفحوصات اللغة حتى القبول الجامعي والمهني.",
+  email: "germany.pathway.services@gmail.com",
+  whatsapp: "963935891748", // بدون + أو أصفار
+  phoneLabel: "+963 935 891 748",
+  formEndpoint: "https://formspree.io/f/YOUR_FORM_ID", // أنشئ نموذجاً مجانياً على formspree.io
+  about: [
+    "نرافقكم في جميع خطوات رحلتكم نحو ألمانيا، بدءاً من استصدار البيشايد وإجراء فحوصات اللغة، وصولاً إلى تأمين القبولات الجامعية والمهنية، مع اهتمام خاص بتخصصات الطب البشري وطب الأسنان والصيدلة، إضافة إلى مختلف الاختصاصات الأكاديمية والمهنية.",
+    "كما نقدم خدمات تعديل ومعادلة الشهادات، وحجز المواعيد، وتجهيز الحسابات البنكية، ومتابعة الإجراءات اللازمة للسفر والدراسة.",
+    "طموحكم نحو ألمانيا يبدأ بخطوة، ونحن معكم في كل خطوة حتى الوصول."
   ],
   services: [
-    {title:{en:"Web development",ar:"تطوير المواقع"},desc:{en:"Fast, accessible websites built to last.",ar:"مواقع سريعة وسهلة الوصول وقابلة للتطوير."}},
-    {title:{en:"UI design",ar:"تصميم الواجهات"},desc:{en:"Clean interfaces that are easy to use.",ar:"واجهات واضحة وسهلة الاستخدام."}},
-    {title:{en:"Consulting",ar:"استشارات تقنية"},desc:{en:"Technical advice for your next project.",ar:"إرشاد تقني لمشروعك القادم."}}
+    {t: "استصدار البيشايد", d: "تجهيز الأوراق ومتابعة طلب البيشايد."},
+    {t: "فحوصات اللغة", d: "التسجيل في فحوصات اللغة والتحضير لها."},
+    {t: "القبول الجامعي والمهني", d: "تأمين القبولات الجامعية وقبولات التدريب والعمل."},
+    {t: "تعديل ومعادلة الشهادات", d: "إجراءات الاعتراف بالشهادات ومعادلتها."},
+    {t: "السفارة وحجز المواعيد", d: "حجز المواعيد ومتابعة إجراءات السفارة."},
+    {t: "الحساب البنكي", d: "تجهيز الحساب البنكي المطلوب للسفر والدراسة."}
   ],
-  i18n: {
-    en:{name:"Your Name",role:"Your job title",bio:"Placeholder: one or two sentences about what you build and who you build it for.",about:"About",aboutText:"Placeholder: a short paragraph about your background, experience and what drives you.",interests:["Open source","Design systems","Teaching"],skills:"Skills",projects:"Projects",experience:"Experience",services:"Services",contact:"Contact",viewWork:"View my work",cv:"Download CV",contactText:"Have a project in mind? Send a message.",fName:"Name",fEmail:"Email",fMsg:"Message",send:"Send message",sending:"Sending…",ok:"Message sent. Thank you!",err:"Could not send. Please email me directly.",all:"All",skip:"Skip to content",web:"Web",design:"Design",live:"Live demo",repo:"GitHub",other:"العربية",rights:"All rights reserved."},
-    ar:{name:"اسمك",role:"مسماك الوظيفي",bio:"نص تجريبي: جملة أو جملتان عمّا تبنيه ولمن تبنيه.",about:"نبذة عني",aboutText:"نص تجريبي: فقرة قصيرة عن خلفيتك وخبراتك وما يحفزك.",interests:["المصادر المفتوحة","أنظمة التصميم","التعليم"],skills:"المهارات",projects:"المشاريع",experience:"الخبرات",services:"الخدمات",contact:"تواصل معي",viewWork:"شاهد أعمالي",cv:"تحميل السيرة الذاتية",contactText:"لديك مشروع؟ أرسل لي رسالة.",fName:"الاسم",fEmail:"البريد الإلكتروني",fMsg:"الرسالة",send:"إرسال الرسالة",sending:"جارٍ الإرسال…",ok:"تم إرسال رسالتك. شكراً لك!",err:"تعذّر الإرسال. راسلني على البريد مباشرة.",all:"الكل",skip:"انتقل إلى المحتوى",web:"ويب",design:"تصميم",live:"معاينة مباشرة",repo:"GitHub",other:"English",rights:"جميع الحقوق محفوظة."}
-  }
+  fields: {
+    "الطب والصحة": ["الطب البشري", "طب الأسنان", "الصيدلة"],
+    "الهندسة والمهن": ["الهندسة", "الاختصاصات المهنية"],
+    "اختصاصات أخرى": ["مختلف الاختصاصات الأكاديمية"]
+  },
+  journey: [
+    {t: "البيشايد", d: "استصدار البيشايد وتجهيز الأوراق."},
+    {t: "فحوصات اللغة", d: "التحضير للفحوصات وحجز المواعيد."},
+    {t: "معادلة الشهادات", d: "تعديل الشهادات ومعادلتها."},
+    {t: "القبول", d: "تأمين القبول الجامعي أو المهني."},
+    {t: "السفارة والحساب البنكي", d: "موعد السفارة وتجهيز الحساب البنكي."},
+    {t: "الوصول إلى ألمانيا", d: "متابعة الإجراءات اللازمة للسفر والدراسة."}
+  ],
+  social: [] // مثال: [{label:"Instagram", url:"https://instagram.com/..."}]
 };
